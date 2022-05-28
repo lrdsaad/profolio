@@ -1,23 +1,27 @@
 import React from 'react'
 import './nav.css'
-import {FcAbout} from 'react-icons/fc'
+import {GiHumanTarget} from 'react-icons/gi'
 import {BiHomeAlt} from 'react-icons/bi'
-import {FcContacts} from 'react-icons/fc'
-import {FcServices} from 'react-icons/fc'
+import {RiContactsBookLine} from 'react-icons/ri'
+import {MdMiscellaneousServices} from 'react-icons/md'
 import {VscVmRunning} from 'react-icons/vsc'
+import { IconContext } from 'react-icons'
 
 
 
 function nav() {
   return (
+    <IconContext.Provider
+    value={{size:'30px'}}
+    >
   <div className='navbar'>
-    <a href='' ><FcAbout /></a>
     <a href='' ><BiHomeAlt /></a>
-    <a href='' ><FcContacts/></a>
-    <a href='' ><FcServices/></a>
+    <a href='' ><GiHumanTarget/></a> 
     <a href='' ><VscVmRunning/></a>
+    <a href='' ><MdMiscellaneousServices/></a>
+    <a href='' ><RiContactsBookLine/></a>
 
-  </div>
+  </div></IconContext.Provider>
   )
 }
 
