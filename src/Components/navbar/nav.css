@@ -15,19 +15,18 @@
   width:400px;
 }
 
-nav a{
-    background:transparent;
-    padding :1rem;
+.navbar a{
+    background:transparent; 
     border-radius:50%;
     display:flex;
     color:var(--color-primary);
-    font-size:1.1rem;
+    
 }
-nav a:hover{
+.navbar a:hover{
     background:rgba(0,0,0,0.3)
 }
 
-nav a.active{
+.navbar a.active{
     background:var(--color-bg);
     color:var(--color-white);
 }
